@@ -1,0 +1,30 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Good Day Sunshine sun">
+  <circle cx="50" cy="50" r="44" fill="#F4D35E"/>
+  <circle cx="50" cy="50" r="38" fill="#F7DC6E" fill-opacity="0.45"/>
+  <path
+    d="M50 50 C50 44 56 40 62 44 C68 48 68 56 62 60 C56 64 48 62 44 56 C40 50 44 42 52 40 C60 38 68 44 66 52 C64 58 56 62 50 58 C46 54 48 48 52 46 C54 44 52 42 50 44"
+    stroke="#FFFFFF"
+    stroke-width="3.8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+  <path
+    d="M52 46 C56 44 60 46 60 50 C60 54 56 56 52 54"
+    stroke="#FFFFFF"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    fill="none"
+    opacity="0.85"
+  />
+  <g stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" opacity="0.92">
+    <line x1="50" y1="6" x2="50" y2="16"/>
+    <line x1="50" y1="84" x2="50" y2="94"/>
+    <line x1="6" y1="50" x2="16" y2="50"/>
+    <line x1="84" y1="50" x2="94" y2="50"/>
+    <line x1="18.8" y1="18.8" x2="25.8" y2="25.8"/>
+    <line x1="74.2" y1="74.2" x2="81.2" y2="81.2"/>
+    <line x1="81.2" y1="18.8" x2="74.2" y2="25.8"/>
+    <line x1="25.8" y1="74.2" x2="18.8" y2="81.2"/>
+  </g>
+</svg>

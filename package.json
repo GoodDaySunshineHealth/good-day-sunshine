@@ -1,0 +1,17 @@
+{
+  "name": "good-day-sunshine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Good Day Sunshine — holistic wellness website",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "Maria Brandt",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}
