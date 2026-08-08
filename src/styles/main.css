@@ -409,11 +409,26 @@ h1, h2, h3, h4 {
   font-weight: 400;
 }
 
+.hero-subtitle .hero-line,
+.hero-note .hero-line {
+  display: block;
+}
+
 .hero-ctas {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.75rem;
+}
+
+.hero-note {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--gray);
+  font-weight: 500;
+  max-width: 28rem;
+  text-align: center;
 }
 
 .hero-ctas .btn-secondary-link {
@@ -1134,6 +1149,8 @@ h1, h2, h3, h4 {
   .page-home .hero-title {
     font-size: clamp(7.5rem, 10vw, 10.5rem);
     color: #38312B;
+    /* Allow full title width so "Sunshine" can center at large desktop sizes */
+    max-width: none;
   }
 
   .page-home .section-title,
