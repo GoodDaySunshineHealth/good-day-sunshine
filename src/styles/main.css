@@ -311,13 +311,27 @@ h1, h2, h3, h4 {
   font-size: 0.95rem;
 }
 
-/* Sun graphic */
-.sun-graphic {
-  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+/* Sun graphic — spiral hover (clockwise, matching the spiral)
+   Hero is a touch more present; smaller suns stay quieter. */
+.sun-graphic,
+.section-sun,
+.footer-sun-icon {
+  transition: transform 0.75s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: transform;
 }
 
-.sun-graphic:hover {
+/* Hero sun */
+.hero-sun:hover {
   transform: rotate(6deg);
+}
+
+/* Smaller suns site-wide (nav, section headers, about, footer icon) */
+.nav-sun:hover,
+.nav-logo:hover .nav-sun,
+.section-sun:hover,
+.footer-sun-top:hover .footer-sun-icon,
+.footer-sun-top:focus-visible .footer-sun-icon {
+  transform: rotate(3.5deg);
 }
 
 .nav-sun {
@@ -796,7 +810,6 @@ h1, h2, h3, h4 {
   height: 2.05rem;
   border-radius: var(--radius-full);
   transform: translateY(-50%);
-  transition: transform 0.25s ease;
 }
 
 .footer-sun-icon {
@@ -807,7 +820,6 @@ h1, h2, h3, h4 {
 
 .footer-sun-top:hover,
 .footer-sun-top:focus-visible {
-  transform: translateY(-50%) rotate(8deg) scale(1.06);
   outline: none;
 }
 
@@ -1032,8 +1044,8 @@ h1, h2, h3, h4 {
   outline: none;
   box-shadow: none;
   background: transparent;
-  pointer-events: none;
   user-select: none;
+  -webkit-user-drag: none;
 }
 
 .section-header .section-sun {
